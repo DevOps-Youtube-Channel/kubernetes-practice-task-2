@@ -1,0 +1,2 @@
+kubectl exec -it nginx -n practice-f-sadatov -- /bin/bash
+curl 10.233.41.14:5000/practice

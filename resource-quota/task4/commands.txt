@@ -1,0 +1,2 @@
+kubectl create deploy nginx-named-port --image nginx:1.18 --replicas 1 --port 80 -n practice-f-sadatov --dry-run=client -o yaml > task4-deployment.yaml
+kubectl apply -f task4-deployment.yaml

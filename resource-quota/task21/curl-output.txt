@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Env</title>
+</head>
+
+<body>
+    <h1>Env</h1>
+    <p>Port: 5000</p>
+    <p>Env: prod</p>
+</body>
+
+</html>

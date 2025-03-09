@@ -1,0 +1,1 @@
+curl http://37.27.12.106:31273/check-ingress

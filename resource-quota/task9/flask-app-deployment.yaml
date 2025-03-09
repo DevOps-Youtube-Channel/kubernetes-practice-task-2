@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flask-app-v4
+  name: flask-app-v4
+  namespace: practice-f-sadatov
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app-v4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flask-app-v4
+    spec:
+      containers:
+      - image: nvrbckdown/flask-app:p-v4
+        name: flask-app
+        ports:
+        - containerPort: 5000

@@ -1,0 +1,1 @@
+kubectl create deployment nginx-deploy --image nginx:1.22 --replicas 2 -n practice-f-sadatov

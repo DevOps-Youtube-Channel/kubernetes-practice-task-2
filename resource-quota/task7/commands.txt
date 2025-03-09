@@ -1,0 +1,2 @@
+kubectl run -n practice-f-sadatov busybox-echo --image=busybox --restart=Never -- /bin/sh -c "echo 'hello world'"
+kubectl logs busybox-echo -n practice-f-sadatov

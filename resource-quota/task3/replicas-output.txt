@@ -1,0 +1,10 @@
+kubectl get deployment -n practice-f-sadatov
+NAME           READY   UP-TO-DATE   AVAILABLE   AGE
+nginx-deploy   4/4     4            4           3m38s
+
+kubectl get pods -n practice-f-sadatov
+NAME                            READY   STATUS    RESTARTS   AGE
+nginx-deploy-65d47c4bfd-4927j   1/1     Running   0          54s
+nginx-deploy-65d47c4bfd-jxprn   1/1     Running   0          54s
+nginx-deploy-65d47c4bfd-nkdvh   1/1     Running   0          3m44s
+nginx-deploy-65d47c4bfd-w26lc   1/1     Running   0          3m44s

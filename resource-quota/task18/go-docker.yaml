@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: go-docker
+  name: go-docker
+  namespace: practice-f-sadatov
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-docker
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: go-docker
+    spec:
+      containers:
+      - image: farrukhit/go-docker:v4
+        name: go-docker
+        ports:
+        - containerPort: 8080
+        resources: {}
+status: {}

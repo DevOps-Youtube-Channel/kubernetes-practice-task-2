@@ -1,0 +1,7 @@
+NAMESPACE                NAME                                READY   STATUS    RESTARTS   AGE
+default                  nginx-named-port-6d65777ddc-wt7bb   1/1     Running   0          40h
+o-toshev                 nginx-named-port-6867dcdff7-vzj8w   1/1     Running   0          18h
+practice-f-sadatov       nginx-named-port-6c5748b7ff-65qvg   1/1     Running   0          116s
+practice-j-jumanazarov   nginx-named-port-98c5bb4b7-jhznj    1/1     Running   0          39h
+practice-kh-nurali       nginx-named-port-6c5748b7ff-7qjgq   1/1     Running   0          39h
+practice-kh-nurali       nginx-named-port-6c5748b7ff-q6gt6   1/1     Running   0          39h

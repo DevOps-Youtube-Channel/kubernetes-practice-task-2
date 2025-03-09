@@ -1,0 +1,2 @@
+kubectl create namespace practice-f-sadatov
+kubectl get namespaces

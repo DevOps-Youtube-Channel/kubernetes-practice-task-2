@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: go-docker
+  name: go-docker
+  namespace: practice-f-sadatov
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-docker
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: go-docker
+    spec:
+      containers:
+      - image: farrukhit/go-docker:v4
+        name: go-docker
+        ports:
+        - containerPort: 8080
+        env:
+        - name: AUTHOR
+          valueFrom:
+            configMapKeyRef:
+              name: my-configmap
+              key: AUTHOR
+        - name: HTTP_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: my-configmap
+              key: HTTP_PORT
+
+        - name: ENV
+          valueFrom:
+            secretKeyRef:
+              name: my-secret
+              key: ENV

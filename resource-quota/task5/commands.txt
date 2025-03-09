@@ -1,0 +1,11 @@
+kubectl expose deployment nginx-named-port --target-port http-port --dry-run=client -o yaml > expose-deploy.yaml
+
+
+
+kubectl get svc -n practice-f-sadatov
+NAME               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+nginx-named-port   ClusterIP   10.233.45.154   <none>        80/TCP    40s
+
+
+kubectl run netshoot --rm -it --image=nicolaka/netshoot -n practice-f-sadatov -- bash
+curl http://nginx-named-port
